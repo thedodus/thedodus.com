@@ -1,0 +1,16 @@
+  <div id="slideshowWrapper">
+    <div id="slideshow">
+    	{.repeated section items}
+        <div class="slide" data-slide-id="{id}" data-slide-url="{urlId}">
+          {.image?}
+            {.if clickthroughUrl}<a href="{clickthroughUrl}">{.end}<img {@|image-meta} data-load="false" />{.if clickthroughUrl}</a>{.end}
+            {.if body || title}<div class="image-description">{.section title}<strong>{@}</strong> {.end}{body}</div>{.end}
+          {.end}
+          {.video?}{@|video load-false}{.end}
+        </div>
+    	{.end}
+    </div>
+    <div class="gallery-controls">
+      <span class="gallery-prev"><span>Prev</span></span><span class="gallery-divider"></span><span class="gallery-next"><span>Next</span></span>
+    </div>
+  </div>

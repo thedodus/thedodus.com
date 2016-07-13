@@ -1,0 +1,94 @@
+
+<!-- === INLINE CSS === -->
+<!-- LESSCSS IS NOT WELCOME IN HERE -->
+
+<style type="text/css">
+
+  @import '/universal/template-read-me/read-me.css';
+
+  img[data-src]{
+      border: 1px solid #ddd; 
+  }
+  
+</style>
+
+
+<!-- === HTML === -->
+
+<section id="read-me-page">
+
+  <section class="rm-intro">
+    <h1>Ishimoto is a full-width horizontal scrolling portfolio template, suited for showcasing collections of work.</h1>
+  </section>
+
+  <section class="rm-full-image">
+      <h2>Header Alignment Options</h2>
+      <p>While the main gallery always spans across the page, there are many ways to stylize the header and links in Ishimoto. The header width can be constrained to the width of the content or the width of the entire site. Additionally, the header can be customized to appear on the left, right, or center of the page. When centered, the navigation links will always be stacked beneath the site title.</p>
+      <select class="simulate-tweak">
+        <option>Left Aligned</option>
+        <option>Center Aligned</option>
+        <option>Right Aligned</option>
+      </select>
+    <div>
+      <img data-src="/assets/nav-left.jpg" data-option-2="/assets/nav-center.jpg" data-option-3="/assets/nav-right.jpg"/>
+    </div>
+  </section>
+
+  <section class="rm-full-image">
+      <h2>Header Navigation Options</h2>
+      <p>The header navigation can be styled as well. The site title and navigation links can be displayed adjacent to each other, split on opposite ends of the page, or stacked with the site title on top of the links.</p>
+      <select class="simulate-tweak">
+        <option>Normal Navigation</option>
+        <option>Split Navigation</option>
+        <option>Stacked Navigation</option>
+      </select>
+    <div>
+      <img data-src="/assets/nav-normal.jpg" data-option-2="/assets/nav-split.jpg" data-option-3="/assets/nav-stacked.jpg"/>
+    </div>
+  </section>
+
+  <section class="rm-full-image">
+      <h2>Blog Sidebar Options</h2>
+      <p>The blog page for Ishimoto can be customized to have a sidebar on the left, right, or none at all.</p>
+      <select class="simulate-tweak">
+        <option>Left Sidebar</option>
+        <option>Right Sidebar</option>
+        <option>No Sidebar</option>
+      </select>
+    <div>
+      <img data-src="/assets/sidebar-left.jpg" data-option-2="/assets/sidebar-right.jpg" data-option-3="/assets/sidebar-hidden.jpg"/>
+    </div>
+  </section>
+
+  <section class="rm-full-image">
+      <h2>Page Alignment Options</h2>
+      <p>The main content of the page can be set to align to the left, right, or center.​</p>
+      <select class="simulate-tweak">
+        <option>Left-aligned Page</option>
+        <option>Center-aligned Page</option>
+        <option>Right-aligned Page</option>
+      </select>
+    <div>
+      <img data-src="/assets/page-left.jpg" data-option-2="/assets/page-center.jpg" data-option-3="/assets/page-right.jpg"/>
+    </div>
+  </section>
+
+ <section class="rm-full-image" style="margin-bottom:30px;">
+    <h2>Vertical Scaling</h2>
+    <p>Ishimoto automatically scales galleries vertically depending on the screen size to ensure a centered full-width gallery every time. Whether on a huge iMac or an 11" MacBook Air, Ishimoto fits. Screens less than 1000px high will set the gallery height to 500px. Maximum height can be adjusted with the Portfolio Height option in the Style Editor. Other pages are also centered vertically if there is not enough content to scroll.</p>
+    <div>
+      <img style="border:none" data-src="/assets/ishimoto-laptop.png" />
+    </div>
+  </section>
+  <section class="rm-browser">
+    <div data-url="http://ishimoto-demo.squarespace.com">
+      <img data-src="/assets/ishimoto-full.png" />
+    </div>
+  </section>
+
+</section>
+
+<!-- === JAVASCRIPT === -->
+
+<script src="/universal/template-read-me/read-me.js"></script>
+

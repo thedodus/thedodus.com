@@ -1,0 +1,24 @@
+{
+  "name" : "Ishimoto",
+  "author" : "Dr. Kill",
+  
+  "layouts" : {
+    "default" : {
+      "name" : "Default",
+      "regions" : [ "site" ]
+    }
+  },
+  
+  "navigations" : [ {
+      "title" : "Main Navigation",
+      "name" : "mainNav"
+  } ],
+  
+  "stylesheets" : [
+    "tweak.less",
+    "global.less",
+    "mobile.less"
+  ],
+
+  "systemCollections" : [ "events", "products", "album" ]
+}

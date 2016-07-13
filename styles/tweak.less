@@ -1,0 +1,237 @@
+
+/* GENERAL
+---------------------------------------------------*/
+
+// tweak: { "category" : "General", "title" : "Site Background", "type" : "color", "target" : "body, #canvas" }
+@siteBackground: #fff;
+
+// tweak: { "category" : "General", "title" : "Page Border Color", "type" : "color", "target" : ".collection-type-gallery #pageWrapper, .collection-type-blog #pageWrapper, .collection-type-page #pageWrapper" }
+@pageBorderColor: #111;
+
+// tweak: { "category" : "General", "title" : "Page Border Width", "type" : "value", "min" : 0, "max" : 50, "target" : ".collection-type-gallery #pageWrapper, .collection-type-blog #pageWrapper, .collection-type-page #pageWrapper" }
+@pageBorderWidth: 0px;
+
+// tweak: { "category" : "General", "title" : "Site Width", "type" : "value", "min" : 600, "max" : 1800, "step" : 10, "target" : ".collection-type-blog #page, .collection-type-page #page", "property" : "width" }
+@siteWidth: 1100px;
+
+// tweak: { "category" : "General", "title" : "Site Padding", "type" : "value", "min" : 10, "max" : 200,  "step" : 10, "target" : ".collection-type-blog #page, .collection-type-page #page", "property" : [ "padding-left", "padding-right" ] }
+@sitePadding: 30px;
+
+// tweak: { "category" : "General", "title" : "Page Padding (Vertical)", "type" : "value", "min" : 0, "max" : 400,  "step" : 5, "target" : ".collection-type-page #pageWrapper, .collection-type-blog #pageWrapper", "property" : [ "padding-top", "padding-bottom" ], "showOnlyWhenPresent" : ":not(.collection-type-gallery)" }
+@pagePaddingVert: 75px;
+
+// tweak: { "category" : "General", "title" : "Page Padding (Sides)", "type" : "value", "min" : 0, "max" : 400,  "step" : 5, "target" : ".collection-type-page #pageWrapper, .collection-type-blog #pageWrapper", "property" : [ "padding-left", "padding-right" ], "showOnlyWhenPresent" : ":not(.collection-type-gallery)" }
+@pagePaddingHoriz: 0px;
+
+// tweak: { "category" : "General", "title" : "Page Alignment", "type" : "dropdown", "options" : [ "Center", "Left", "Right" ], "target" : ".collection-type-blog #pageWrapper, .collection-type-page #pageWrapper" }
+
+
+/* HEADER
+---------------------------------------------------*/
+
+// tweak: { "category" : "Site Header", "title" : "Logo Image Size", "type" : "value", "min" : 10, "max" : 1200, "target" : "h1.logo img", "showOnlyWhenPresent" : "body.logo-image" }
+@logoSize: 80px;
+
+// tweak: { "category" : "Site Header", "title" : "Site Title", "type" : "font", "target" : "#headerWrapper, h1.logo" }
+.site-title-font {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+// tweak: { "category" : "Site Header", "title" : "Site Title Size", "type" : "value", "min" : 8, "max" : 72, "target" : "h1.logo" }
+@siteTitleSize: 36px;
+
+// tweak: { "category" : "Site Header", "title" : "Site Title Color", "type" : "color", "target" : "#headerWrapper, h1.logo", "showOnlyWhenPresent" : "body.site-title" }
+@siteTitleColor: #222;
+
+// tweak: { "category" : "Site Header", "title" : "Site Subtitle", "type" : "font", "target" : ".logo-subtitle", "showOnlyWhenPresent" : ".logo-subtitle" }
+.site-subtitle-font {
+  font-family: inherit;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  text-transform: normal;
+  letter-spacing: 0px;
+}
+
+// tweak: { "category" : "Site Header", "title" : "Site Subtitle Size", "type" : "value", "min" : 8, "max" : 24, "target" : ".logo-subtitle", "showOnlyWhenPresent" : ".logo-subtitle" }
+@siteSubtitleSize: 12px;
+
+// tweak: { "category" : "Site Header", "title" : "Site Subtitle Color", "type" : "color",   "target" : ".logo-subtitle", "showOnlyWhenPresent" : ".logo-subtitle", "showOnlyWhenPresent" : ".logo-subtitle" }
+@siteSubtitleColor: #aaa;
+
+// tweak: { "category" : "Site Header", "title" : "Header Alignment", "type" : "dropdown", "options" : [ "Left", "Center", "Right" ], "target" : "#header" }
+
+// tweak: { "category" : "Site Header", "title" : "Header Navigation", "type" : "dropdown", "options" : [ "Split", "Normal", "Stacked" ], "target" : "#header, #topNav .main-nav > ul#nav > li", "showOnlyWhenPresent" : ".header-alignment-left, .header-alignment-right" }
+
+// tweak: { "category" : "Site Header", "title" : "Header/Sidebar Padding", "type" : "value", "min" : 20, "max" : 100, "step" : 5, "target" : "#header", "property" : [ "padding-top", "padding-bottom" ] }
+@headerPadding: 30px;
+
+// tweak: { "category" : "Site Header", "title" : "Constrain Header Width", "type" : "checkbox", "active" : "true", "target" : "#header" }
+
+
+/* NAVIGATION
+---------------------------------------------------*/
+
+// tweak: { "category" : "Navigation", "title" : "Navigation", "type" : "font", "target" : "#topNav .main-nav > ul#nav > li" }
+.nav-font {
+  font-family: Open Sans, Helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "category" : "Navigation", "title" : "Navigation Size", "type" : "value", "min" : 8, "max" : 72, "target" : "#topNav .main-nav > ul#nav > li" }
+@navSize: 14px;
+
+// tweak: { "category" : "Navigation", "title" : "Navigation Color", "type" : "color", "target" : "#topNav, #topNav .main-nav > ul#nav > li" }
+@navColor: #9c9c9c;
+
+// tweak: { "category" : "Navigation", "title" : "Navigation (Active) Color", "type" : "color", "target" : "#topNav .main-nav > ul#nav > li" }
+@navActiveColor: #000;
+
+// tweak: { "category" : "Navigation", "title" : "Navigation (Hover) Color", "type" : "color", "target" : "#topNav .main-nav > ul#nav > li" }
+@navHoverColor: #000;
+
+// tweak: { "category" : "Navigation", "title" : "Navigation Spacing", "type" : "value", "min" : 0, "max" : 100, "step" : 5, "target" : "#topNav .main-nav > ul#nav > li" }
+@navPadding: 30px;
+
+// tweak: { "category" : "Navigation", "title" : "Navigation Alignment", "type" : "value", "min" : 0, "max" : 50, "target" : "#topNav .main-nav > ul#nav > li", "showOnlyWhenPresent" : ".header-alignment-left, .header-alignment-right" }
+@navAlignment: 15px;
+
+
+/* BANNER
+---------------------------------------------------*/
+
+
+/* MAIN CONTENT
+---------------------------------------------------*/
+
+// tweak: { "category" : "Main Content", "title" : "Headings", "type" : "font", "target" : "h1:not(.logo), h2, h3, .collection-type-blog #mainContent, .collection-type-page #mainContent", "loadAllVariants" : "true" }
+.headings-font {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.4em;
+  text-transform: normal;
+  letter-spacing: 0px;
+}
+
+// tweak: { "category" : "Main Content", "title" : "Headings Size", "type" : "value", "min" : 8, "max" : 72, "target" : "h1:not(.logo), h2, h3, .collection-type-blog #mainContent, .collection-type-page #mainContent" }
+@headingsSize: 18px;
+
+// tweak: { "category" : "Main Content", "title" : "Headings Color", "type" : "color", "target" : "h1:not(.logo), h2, h3" }
+@headingsColor: #111;
+
+// tweak: { "category" : "Main Content", "title" : "Text", "type" : "font", "target" : ".hentry, #mainContent", "loadAllVariants": "true" }
+.body-font {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+  letter-spacing: 0px;
+}
+
+// tweak: { "category" : "Main Content", "title" : "Text Size", "type" : "value", "min" : 8, "max" : 24, "target" : ".hentry, .collection-type-blog #mainContent, .collection-type-page #mainContent" }
+@bodyTextSize: 12px;
+
+// tweak: { "category" : "Main Content", "title" : "Body Text Color", "type" : "color", "target" : "body" }
+@bodyTextColor: #444;
+
+// tweak: { "category" : "Main Content", "title" : "Body Link Color", "type" : "color", "target" : "body" }
+@bodyLinkColor: #000;
+
+// tweak: { "category" : "Main Content", "title" : "Body Link (Hover) Color", "type" : "color", "target" : "body" }
+@bodyLinkHoverColor: #444;
+
+
+/* BLOG STYLES
+---------------------------------------------------*/
+
+// tweak: { "category" : "Blog Styles", "title" : "Blog Meta Data", "type" : "color", "target" : ".meta, .meta-row", "showOnlyWhenPresent" : ".collection-type-blog" }
+@blogMetaColor: #aaa;
+
+// tweak: { "category" : "Blog Styles", "title" : "Quote", "type" : "font", "target" : "blockquote" }
+.quote-font {
+  font-family: 'Helvetica', arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.4em;
+  letter-spacing: 0px;
+}
+
+// tweak: { "category" : "Blog Styles", "title" : "Quote Size", "type" : "value", "min" : 8, "max" : 72, "target" : "blockquote" }
+@quoteSize: 16px;
+
+// tweak: { "category" : "Blog Styles", "title" : "Blog Post Spacing", "type" : "value", "min" : 0,  "max" : 200,  "target" : ".hentry", "showOnlyWhenPresent" : ".collection-type-blog" }
+@blogPostSpacing: 80px;
+
+// tweak: { "category" : "Blog Styles", "title" : "Blog Sidebar", "type" : "dropdown", "options" : [ "Right", "Left", "Hidden" ], "target" : ".collection-type-blog #mainContent, .collection-type-page #mainContent", "category": "Blog Styles", "showOnlyWhenPresent" : ".collection-type-blog" }
+
+// tweak: { "category" : "Blog Styles", "title" : "Blog Sidebar Width", "type" : "value", "min" : 50, "max" : 700, "step" : 5, "condition" : { "Blog Sidebar": [ "Left", "Right" ] }, "target" : "#sidebarWrapper", "showOnlyWhenPresent" : ".collection-type-blog" }
+@blogSidebarWidth: 270px;
+
+// tweak: { "category" : "Blog Styles", "title" : "Blog Sidebar Padding", "type" : "value", "min" : 0,  "max" : 150, "step" : 5, "condition" : { "Blog Sidebar": [ "Left", "Right" ] }, "target" : ".collection-type-blog #mainContent", "showOnlyWhenPresent" : ".collection-type-blog" }
+@blogSidebarPadding: 75px;
+
+
+/* GALLERY STYLES
+---------------------------------------------------*/
+
+// tweak: { "category" : "Gallery Styles", "title" : "Gallery Background", "type" : "color",   "target" : ".collection-type-gallery #pageWrapper", "showOnlyWhenPresent" : ".collection-type-gallery" }
+@galleryBackground: #111;
+
+// tweak: { "category" : "Gallery Styles", "title" : "Gallery Height (Max)", "type" : "value", "min" : 500, "max" : 1000, "target" : ".collection-type-gallery #slideshow", "category" : "Gallery Styles", "showOnlyWhenPresent" : ".collection-type-gallery" }
+@portfolioHeight: 500px;
+
+// tweak: { "category" : "Gallery Styles", "title" : "Gallery Slide Opacity", "type" : "value", "min" : 0, "max" : 100, "target" : ".collection-type-gallery .slide", "category" : "Gallery Styles", "showOnlyWhenPresent" : ".collection-type-gallery" }
+@slideOpacity: 100;
+
+// tweak: { "category" : "Gallery Styles", "title" : "Hide Gallery Descriptions", "type" : "checkbox", "default" : "false", "target" : ".collection-type-gallery .slide", "showOnlyWhenPresent" : ".collection-type-gallery" }
+
+// tweak: { "category" : "Gallery Styles", "title" : "Gallery Auto Play", "type" : "checkbox", "js": "true", "target" : ".collection-type-gallery #slideshow", "showOnlyWhenPresent" : ".collection-type-gallery" }
+
+// tweak: { "category" : "Gallery Styles", "title" : "Gallery Controls", "type" : "dropdown", "options" : [ "None", "Text", "Arrows" ], "showOnlyWhenPresent" : ".collection-type-gallery" }
+
+
+/* FOOTER
+---------------------------------------------------*/
+
+// tweak: { "category" : "Site Footer", "title" : "Hide Social Icons", "type" : "checkbox", "default" : "false", "target" : "#footer, .social-links" }
+
+// tweak: { "category" : "Site Footer", "title" : "Social Icon Color", "type" : "color", "target" : "#footer, .social-links", "showOnlyWhenPresent" : "body:not(.hide-social-icons)" }
+@socialIconColor:#9c9c9c;
+
+// tweak: { "category" : "Site Footer", "title" : "Social Icon Size", "type" : "value", "min" :16, "max" :48, "target" : ".social-links, #footer", "showOnlyWhenPresent" : "body:not(.hide-social-icons)" }
+@socialIconSize:16px;
+
+// tweak: { "category" : "Site Footer", "title" : "Social Icon Style", "type" : "dropdown", "options" : [ "Normal", "Round", "Square" ], "default" : "Normal", "target" : "#footer, .social-links", "showOnlyWhenPresent" : "body:not(.hide-social-icons)" }
+
+
+/* PRODUCTS
+---------------------------------------------------*/
+
+// tweak: { "type" : "checkbox", "title" : "Show Category Navigation", "active" : "false", "target" : ".collection-type-products #pageWrapper, #categoryNav", "showOnlyWhenPresent" : ".collection-type-products", "category" : "Products" }
+
+// tweak: { "type" : "font", "title" : "Category Nav Font", "target" : ".collection-type-products #pageWrapper, #categoryNav", "category" : "Products", "showOnlyWhenPresent" : ".collection-type-products.show-category-navigation" }
+.category-nav-font {
+  font-family: "proxima-nova", Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "color", "title" : "Category Nav Color", "target" : ".collection-type-products #pageWrapper, #categoryNav", "category" : "Products", "showOnlyWhenPresent" : ".collection-type-products.show-category-navigation" }
+@categoryNavColor: #9c9c9c;
+
+// tweak: { "type" : "color", "title" : "Category Nav Active Color", "target" : ".collection-type-products #pageWrapper, #categoryNav", "category" : "Products", "showOnlyWhenPresent" : ".collection-type-products.show-category-navigation" }
+@categoryNavActiveColor: #000000;
+
